@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demostracion de Output en Javascript</title>
+</head>
+<body>
+    <button onclick="Alerta()">Quien creo la pagina?</button>
+
+    <p id="prueba"></p>
+    <button onclick="agregarTexto()">Ira picale</button>
+
+    <script>
+        function Alerta() {
+            alert("Creador de la pagina: Noe Moreno Franco");
+        }   
+
+        function agregarTexto() {
+            document.getElementById("prueba").innerHTML = "¡Texto actualizado con Javascript!";
+        }   
+
+        window.onload = function() {
+        console.log("La pagina esta lista");
+        };
+    </script>
+</body>
+</html>

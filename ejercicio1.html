@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actualizar con JavaScript</title>
+</head>
+<body>
+
+    <h1>ira, si le picas al boton, pondra un texto</h1>
+    <img id="jaja" src="" alt="ostias" style="display: none;">
+    <!-- srry, no voy a usar css interno o externo para este extra chistoso -->
+    <p id="prueba"></p>
+
+    <button onclick="agregarTextoYSorpresa()">Ira picale</button>
+
+    <script>
+        function agregarTextoYSorpresa() {
+            document.getElementById("prueba").innerHTML = "¡Texto actualizado con Javascript!";
+            
+            let img = document.getElementById("jaja");
+
+            img.src = "https://i.pinimg.com/736x/53/36/de/5336de45cb5f40835ca35f5c8eb1e1f9.jpg";
+            img.style.display = "block";
+        }   
+    </script>
+</body>
+</html>
